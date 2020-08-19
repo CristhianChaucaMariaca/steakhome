@@ -1,0 +1,5 @@
+@media screen and(max-width:700px){
+    .menu__nav{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
