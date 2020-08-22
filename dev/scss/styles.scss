@@ -1,7 +1,12 @@
 @import "includes/general";
 @import "includes/variables";
 @import "includes/grid";
+@import "includes/text";
 
 // Blocks
 @import "blocks/menu";
+@import "blocks/header";
+@import "blocks/dishes";
+
+// Media Querys
 @import "media/media";

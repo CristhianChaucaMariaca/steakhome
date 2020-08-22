@@ -3,17 +3,35 @@
   margin: 0px;
 }
 
+body {
+  background-image: url("media/STEAKHOUSE-FONDO-PANTALLAS-PC.JPG");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-origin: initial;
+  background-size: cover;
+}
+
 .container {
   width: 80%;
   margin: 0 auto;
 }
 
+@font-face {
+  font-family: Barnum;
+  src: url("fonts/p.t.barnumregular.ttf") format("truetype");
+}
+body {
+  font-family: Barnum;
+  font-size: 12pt;
+}
+
 .menu {
-  height: 100vh;
   width: 100wh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 50px;
 }
 .menu__body {
   max-width: 800px;
@@ -33,23 +51,58 @@
   grid-row-gap: 30px;
 }
 .menu__item {
-  max-width: 190px;
   text-decoration: none;
   text-transform: uppercase;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: #B935AC;
-  border: solid 4px #F2D129;
-  border-radius: 30px;
   text-align: center;
   color: white;
-  box-shadow: 6px 9px 16px 1px rgba(0, 0, 0, 0.46);
+  position: relative;
+  width: 180px;
 }
 .menu__item:hover {
   transform: scale(1.05);
   transition: all 0.3s;
-  background-color: #a52798;
-  box-shadow: 6px 9px 16px 1px rgba(0, 0, 0, 0.3);
+}
+.menu__btn {
+  width: 100%;
+}
+.menu__text {
+  position: absolute;
+  z-index: 100;
+  bottom: 50%;
+  right: 50%;
+  transform: translateX(50%) translateY(50%);
+}
+
+.header {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  margin-bottom: 70px;
+}
+.header__img {
+  max-width: 100%;
+  z-index: 99;
+}
+.header__logo {
+  width: 250px;
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  left: 50%;
+  transform: translateY(10%) translateX(-50%);
+}
+
+.header-dishes {
+  background-color: red;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.dishes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.dishes__img {
+  width: 40px;
 }
 
 @media screen and (max-width: 700px) {

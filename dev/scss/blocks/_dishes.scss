@@ -1,0 +1,21 @@
+.header-dishes{
+    background-color: red;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    &__text{
+
+    }
+}
+.dishes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    &__link{
+
+    }
+    &__plate{
+
+    }
+    &__img{
+        width: 40px;
+    }
+}

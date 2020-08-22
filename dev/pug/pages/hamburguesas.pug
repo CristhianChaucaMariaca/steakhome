@@ -1,0 +1,9 @@
+extends ../templates/template-dishes
+include ../mixins/dishes
+block content
+    .dishes
+        .container
+            include ../config/hamburguesas
+            each plate in burguers
+                if(plate.status === true)
+                    +dishes(plate.link,plate.img,plate.text)
