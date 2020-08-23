@@ -3,5 +3,4 @@ mixin dishes(link,img,text)
         a(href=link).dishes__link
             picture
                 img.dishes__img(alt="", srcset=img)
-        p.dishes__text
-        | #{text}
+        p.dishes__text #{text}

@@ -1,0 +1,52 @@
+.plate{
+    margin-top:100px;
+    margin-bottom: 100px;
+    &__logo{
+        position: absolute;
+        right: 30px;
+        top:0;
+        transform:translateY(-40%);
+        width: 250px;
+        z-index: 100;
+    }
+    &__img{
+        position: relative;
+        width: 80%;
+        margin:0 auto;
+        img{ // TODO: REVISAR ESTA ETIQUETA PARA NO CAUSAR CONFLICTO CON LAS CLASES
+            max-width: 100%;
+        }
+        &:hover .plate__picture{
+            transform:scale(1.2);
+            transition: transform 5.5s linear;
+            transform-origin: center;
+        }
+    }
+    &__cont__picture{
+        overflow: hidden;
+        display: block;
+    }
+    &__picture{
+        width: 100%;
+        transition: transform 5.5s linear;
+    }
+    &__body{
+        color: $colorprimario;
+    }
+    &__title{
+        font-size: 2.5em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__price{
+        text-align: center;
+        font-size: 1.5em;
+    }
+    &__text{
+        font-size: 1.5em;
+        margin-top: 10px;
+        text-align: center;
+    }
+}

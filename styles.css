@@ -15,6 +15,7 @@ body {
 .container {
   width: 80%;
   margin: 0 auto;
+  position: relative;
 }
 
 @font-face {
@@ -75,7 +76,6 @@ body {
 
 .header {
   width: 100%;
-  height: 300px;
   position: relative;
   margin-bottom: 70px;
 }
@@ -90,24 +90,113 @@ body {
   z-index: 100;
   bottom: 0;
   left: 50%;
-  transform: translateY(10%) translateX(-50%);
+  transform: translateY(20%) translateX(-50%);
 }
 
-.header-dishes {
-  background-color: red;
+.headerdishes {
+  font-size: 2em;
+  background-color: #3d2116;
+  color: white;
   padding-bottom: 20px;
   padding-top: 20px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
 }
+.headerdishes__logo {
+  position: absolute;
+  width: 150px;
+  right: 0px;
+  z-index: 100;
+  top: 0;
+}
+.headerdishes__img {
+  width: 100%;
+  transform: rotate(10deg);
+}
+
 .dishes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  text-align: center;
+}
+.dishes__link {
+  text-decoration: none;
+  width: 100%;
+  height: auto;
+}
+.dishes__link:hover .dishes__img {
+  transform: scale(1.03);
+  transform-origin: center;
+  transition: transform 0.3s ease;
 }
 .dishes__img {
-  width: 40px;
+  width: 100%;
+}
+.dishes__text {
+  margin-top: 10px;
+}
+
+.plate {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.plate__logo {
+  position: absolute;
+  right: 30px;
+  top: 0;
+  transform: translateY(-40%);
+  width: 250px;
+  z-index: 100;
+}
+.plate__img {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+.plate__img img {
+  max-width: 100%;
+}
+.plate__img:hover .plate__picture {
+  transform: scale(1.2);
+  transition: transform 5.5s linear;
+  transform-origin: center;
+}
+.plate__cont__picture {
+  overflow: hidden;
+  display: block;
+}
+.plate__picture {
+  width: 100%;
+  transition: transform 5.5s linear;
+}
+.plate__body {
+  color: #3d2116;
+}
+.plate__title {
+  font-size: 2.5em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.plate__price {
+  text-align: center;
+  font-size: 1.5em;
+}
+.plate__text {
+  font-size: 1.5em;
+  margin-top: 10px;
+  text-align: center;
 }
 
 @media screen and (max-width: 700px) {
   .menu__nav {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .header__logo {
+    width: 170px;
   }
 }

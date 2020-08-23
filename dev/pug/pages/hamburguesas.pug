@@ -1,8 +1,8 @@
 extends ../templates/template-dishes
 include ../mixins/dishes
 block content
-    .dishes
-        .container
+    .container
+        .dishes
             include ../config/hamburguesas
             each plate in burguers
                 if(plate.status === true)

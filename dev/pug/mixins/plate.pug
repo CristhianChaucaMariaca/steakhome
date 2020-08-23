@@ -1,0 +1,13 @@
+mixin plate(img,title,price,pricetwo,ingredients)
+    .plate
+        .plate__img
+            .plate__logo
+                img(src="media/steakhouse.png", alt="")
+            picture.plate__cont__picture
+                img.plate__picture(alt="", srcset="media/hamburguesas/STEAKHOUSE_BURGER.jpg")
+        .container
+            .plate__body
+                h2.plate__title #{title}
+                p.plate__price #{price}
+                p.plate__price #{pricetwo}
+                p.plate__text #{ingredients}

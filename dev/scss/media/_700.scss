@@ -2,4 +2,9 @@
     .menu__nav{
         grid-template-columns: repeat(2, 1fr);
     }
+    .header{
+        &__logo{
+            width: 170px;
+        }
+    }
 }

@@ -1,5 +1,5 @@
-@import "includes/general";
 @import "includes/variables";
+@import "includes/general";
 @import "includes/grid";
 @import "includes/text";
 
@@ -7,6 +7,7 @@
 @import "blocks/menu";
 @import "blocks/header";
 @import "blocks/dishes";
+@import "blocks/plate";
 
 // Media Querys
 @import "media/media";
