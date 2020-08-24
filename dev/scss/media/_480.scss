@@ -1,0 +1,32 @@
+@media screen and(max-width:480px){
+    .container{
+        width: 90%;
+    }
+    .dishes{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+        &__text{
+            text-align: center;
+        }
+    }
+    .plate{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        &__img{
+            width: 100%;
+        }
+        &__body{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+    .menu{
+        &__nav{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__item{
+            width: 160px;
+        }
+    }
+
+}

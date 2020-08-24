@@ -1,0 +1,30 @@
+@media screen and(max-device-width:768px){
+    .container{
+        width: 90%;
+    }
+    .menu{
+        &__nav{
+            grid-template-columns: repeat(2, 1fr);
+    
+        }
+        &__item{
+            &:last-child{
+                grid-row-start: auto;
+                grid-column-end: auto;
+            }
+            &:nth-last-child(2){
+                grid-row-start: auto;
+                grid-column-end: auto;
+            }
+        }
+    }
+    .header{
+        &__logo{
+            width: 170px;
+        }
+    }
+    .dishes{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}

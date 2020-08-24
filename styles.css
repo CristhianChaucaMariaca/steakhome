@@ -3,6 +3,22 @@
   margin: 0px;
 }
 
+/* Responsive Resets
+-------------------------------------------------------------- */
+@viewport {
+  width: device-width;
+}
+html {
+  overflow-y: auto;
+}
+
+img,
+audio,
+video,
+canvas {
+  max-width: 100%;
+}
+
 body {
   background-image: url("media/STEAKHOUSE-FONDO-PANTALLAS-PC.jpg");
   background-repeat: no-repeat;
@@ -13,6 +29,7 @@ body {
 }
 
 .container {
+  max-width: 1024px;
   width: 80%;
   margin: 0 auto;
   position: relative;
@@ -47,7 +64,7 @@ body {
 }
 .menu__nav {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 30px;
   grid-row-gap: 30px;
 }
@@ -62,6 +79,14 @@ body {
 .menu__item:hover {
   transform: scale(1.05);
   transition: all 0.3s;
+}
+.menu__item:last-child {
+  grid-row-start: 3;
+  grid-column-end: 4;
+}
+.menu__item:nth-last-child(2) {
+  grid-row-start: 3;
+  grid-column-end: 3;
 }
 .menu__btn {
   width: 100%;
@@ -94,32 +119,20 @@ body {
 }
 
 .headerdishes {
-  font-size: 2em;
-  background-color: #3d2116;
+  font-size: 1.2em;
+  background-color: #472C0F;
   color: white;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 5px;
+  padding-top: 10px;
   text-transform: uppercase;
   margin-bottom: 30px;
   position: relative;
 }
-.headerdishes__logo {
-  position: absolute;
-  width: 150px;
-  right: 0px;
-  z-index: 100;
-  top: 0;
-}
-.headerdishes__img {
-  width: 100%;
-  transform: rotate(10deg);
-}
 
 .dishes {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  text-align: center;
+  grid-template-columns: repeat(4, minmax(190px, 1fr));
+  gap: 50px;
 }
 .dishes__link {
   text-decoration: none;
@@ -136,18 +149,28 @@ body {
 }
 .dishes__text {
   margin-top: 10px;
+  text-align: left;
+  font-size: 1.2em;
+  color: #472C0F;
+}
+
+.content__plate {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .plate {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  width: 420px;
 }
 .plate__logo {
   position: absolute;
-  right: 30px;
+  right: 15px;
   top: 0;
   transform: translateY(-40%);
-  width: 250px;
+  width: 100px;
   z-index: 100;
 }
 .plate__img {
@@ -172,10 +195,12 @@ body {
   transition: transform 5.5s linear;
 }
 .plate__body {
-  color: #3d2116;
+  color: #472C0F;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .plate__title {
-  font-size: 2.5em;
+  font-size: 1.6em;
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
@@ -183,20 +208,76 @@ body {
 }
 .plate__price {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.1em;
 }
 .plate__text {
-  font-size: 1.5em;
+  font-size: 1.1em;
   margin-top: 10px;
   text-align: center;
 }
+.plate__pepsi {
+  width: 40px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.plate__pepsi img {
+  max-width: 100%;
+}
 
-@media screen and (max-width: 700px) {
+@media screen and (max-device-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
   .menu__nav {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .menu__item:last-child {
+    grid-row-start: auto;
+    grid-column-end: auto;
+  }
+  .menu__item:nth-last-child(2) {
+    grid-row-start: auto;
+    grid-column-end: auto;
   }
 
   .header__logo {
     width: 170px;
+  }
+
+  .dishes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    width: 90%;
+  }
+
+  .dishes {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  .dishes__text {
+    text-align: center;
+  }
+
+  .plate {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .plate__img {
+    width: 100%;
+  }
+  .plate__body {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .menu__nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .menu__item {
+    width: 160px;
   }
 }

@@ -1,29 +1,18 @@
+
 .headerdishes{
-    font-size: 2em;
+    font-size: 1.2em;
     background-color: $colorprimario;
     color:white;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-top: 10px;
     text-transform: uppercase;
     margin-bottom: 30px;
     position: relative;
-    &__logo{
-        position: absolute;
-        width: 150px;
-        right: 0px;
-        z-index: 100;
-        top: 0;
-    }
-    &__img{
-        width: 100%;
-        transform: rotate(10deg);
-    }
 }
 .dishes{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    text-align: center;
+    grid-template-columns: repeat(4, minmax(190px,1fr));
+    gap: 50px;;
     &__link{
         text-decoration:none;
         width: 100%;
@@ -42,5 +31,8 @@
     }
     &__text{
         margin-top: 10px;
+        text-align: left;
+        font-size: 1.2em;
+        color:$colorprimario;
     }
 }
