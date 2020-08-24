@@ -29,10 +29,6 @@
         color:white;
         position: relative;
         width: 180px;
-        // sombra
-        // -webkit-box-shadow: 6px 9px 16px 1px rgba(0,0,0,0.46);
-        // -moz-box-shadow: 6px 9px 16px 1px rgba(0,0,0,0.46);
-        // box-shadow: 6px 9px 16px 1px rgba(0,0,0,0.46);
         &:hover{
             transform: scale(1.05);
             transition:all .3s;

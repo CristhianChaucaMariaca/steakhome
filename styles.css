@@ -278,6 +278,6 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
   .menu__item {
-    width: 160px;
+    width: 145px;
   }
 }
