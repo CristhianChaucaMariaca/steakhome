@@ -4,7 +4,8 @@
     }
     .dishes{
         grid-template-columns: repeat(2,1fr);
-        grid-gap: 20px;
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
         &__text{
             text-align: center;
         }
@@ -19,6 +20,16 @@
             padding-left: 10px;
             padding-right: 10px;
         }
+        &__logo{
+            right: 10px;
+            width: 140px;
+        }
+    }
+    .header{
+        &__logo{
+            width: 200px;
+        }
+        margin-bottom: 75px;
     }
     .menu{
         &__nav{
@@ -28,6 +39,7 @@
         }
         &__item{
             width: 145px;
+            font-size: 1.1em;
         }
     }
 

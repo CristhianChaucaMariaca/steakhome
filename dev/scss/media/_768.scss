@@ -5,9 +5,10 @@
     .menu{
         &__nav{
             grid-template-columns: repeat(2, 1fr);
-    
+            grid-gap: 20px;
         }
         &__item{
+            width: 160px;
             &:last-child{
                 grid-row-start: auto;
                 grid-column-end: auto;
@@ -20,7 +21,7 @@
     }
     .header{
         &__logo{
-            width: 170px;
+            width: 250px;
         }
     }
     .dishes{

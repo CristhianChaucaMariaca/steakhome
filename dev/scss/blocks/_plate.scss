@@ -12,7 +12,7 @@
         right: 15px;
         top:0;
         transform:translateY(-40%);
-        width: 100px;
+        width: 130px;
         z-index: 100;
     }
     &__img{
@@ -21,11 +21,6 @@
         margin:0 auto;
         img{ // TODO: REVISAR ESTA ETIQUETA PARA NO CAUSAR CONFLICTO CON LAS CLASES
             max-width: 100%;
-        }
-        &:hover .plate__picture{
-            transform:scale(1.2);
-            transition: transform 5.5s linear;
-            transform-origin: center;
         }
     }
     &__cont__picture{

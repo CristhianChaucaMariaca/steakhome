@@ -24,7 +24,6 @@ body {
   background-repeat: no-repeat;
   background-position: bottom;
   background-attachment: fixed;
-  background-origin: initial;
   background-size: cover;
 }
 
@@ -74,6 +73,7 @@ body {
   text-align: center;
   color: white;
   position: relative;
+  font-size: 1.3em;
   width: 180px;
 }
 .menu__item:hover {
@@ -96,7 +96,7 @@ body {
   z-index: 100;
   bottom: 50%;
   right: 50%;
-  transform: translateX(50%) translateY(50%);
+  transform: translateX(50%) translateY(45%);
 }
 
 .ocultar {
@@ -166,11 +166,11 @@ body {
 }
 
 .headerdishes {
-  font-size: 1.2em;
+  font-size: 1.1em;
   background-color: #472C0F;
   color: white;
-  padding-bottom: 5px;
-  padding-top: 10px;
+  padding-bottom: 3px;
+  padding-top: 3px;
   text-transform: uppercase;
   margin-bottom: 30px;
   position: relative;
@@ -180,7 +180,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, minmax(190px, 1fr));
   gap: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
 }
 .dishes__link {
   text-decoration: none;
@@ -192,11 +192,13 @@ body {
   transform-origin: center;
   transition: transform 0.3s ease;
 }
+.dishes__picture {
+  display: block;
+}
 .dishes__img {
   width: 100%;
 }
 .dishes__text {
-  margin-top: 10px;
   text-align: left;
   font-size: 1.2em;
   color: #472C0F;
@@ -218,7 +220,7 @@ body {
   right: 15px;
   top: 0;
   transform: translateY(-40%);
-  width: 100px;
+  width: 130px;
   z-index: 100;
 }
 .plate__img {
@@ -228,11 +230,6 @@ body {
 }
 .plate__img img {
   max-width: 100%;
-}
-.plate__img:hover .plate__picture {
-  transform: scale(1.2);
-  transition: transform 5.5s linear;
-  transform-origin: center;
 }
 .plate__cont__picture {
   overflow: hidden;
@@ -279,6 +276,10 @@ body {
 
   .menu__nav {
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  .menu__item {
+    width: 160px;
   }
   .menu__item:last-child {
     grid-row-start: auto;
@@ -290,7 +291,7 @@ body {
   }
 
   .header__logo {
-    width: 170px;
+    width: 250px;
   }
 
   .dishes {
@@ -304,7 +305,8 @@ body {
 
   .dishes {
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
   }
   .dishes__text {
     text-align: center;
@@ -321,6 +323,17 @@ body {
     padding-left: 10px;
     padding-right: 10px;
   }
+  .plate__logo {
+    right: 10px;
+    width: 140px;
+  }
+
+  .header {
+    margin-bottom: 75px;
+  }
+  .header__logo {
+    width: 200px;
+  }
 
   .menu__nav {
     grid-template-columns: repeat(2, 1fr);
@@ -329,5 +342,6 @@ body {
   }
   .menu__item {
     width: 145px;
+    font-size: 1.1em;
   }
 }

@@ -28,6 +28,7 @@
         text-align: center;
         color:white;
         position: relative;
+        font-size: 1.3em;
         width: 180px;
         &:hover{
             transform: scale(1.05);
@@ -50,6 +51,6 @@
         z-index: 100;
         bottom: 50%;
         right: 50%;
-        transform: translateX(50%) translateY(50%);
+        transform: translateX(50%) translateY(45%);
     }
 }
