@@ -1,0 +1,10 @@
+extends ../../templates/template.pug
+include ../../mixins/plate
+block append config
+    //- cambiar la varialbe | PAGE | para modificar el titulo de la pagina
+    - page = "Classic Burger"
+block content
+    .content__plate
+        //- ingresar los datos para que se vea en la pagina en el siguiente orden
+        //- imgajen | titulo | precio | ingredientes
+        +plate('media/hamburguesas/CLASSIC_BURGER.jpg',page,'(160gr) Bs 56','(250gr) Bs 68','Hamburguesa hecha al estilo original con las mejores especias.')

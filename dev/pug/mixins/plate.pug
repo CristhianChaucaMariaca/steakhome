@@ -2,9 +2,9 @@ mixin plate(img,title,price,pricetwo,ingredients)
     .plate
         .plate__img
             .plate__logo
-                img(src="media/steakhouse.png", alt="")
+                img(src="media/steakhouse.png", alt="Logo SteakHouse")
             picture.plate__cont__picture
-                img.plate__picture(alt="", srcset="media/hamburguesas/STEAKHOUSE_BURGER.jpg")
+                img.plate__picture(srcset=img, alt=title)
         .container
             .plate__body
                 h2.plate__title #{title}
@@ -12,4 +12,4 @@ mixin plate(img,title,price,pricetwo,ingredients)
                 p.plate__price #{pricetwo}
                 p.plate__text #{ingredients}
         .plate__pepsi
-            img(alt="", srcset="media/pepsi_logo.png")
+            img(alt="logo pepsi", srcset="media/pepsi_logo.png")

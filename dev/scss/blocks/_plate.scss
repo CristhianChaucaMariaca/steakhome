@@ -7,6 +7,7 @@
 }
 .plate{
     width: 420px;
+    // margin-top: 50px;
     &__logo{
         position: absolute;
         right: 15px;
@@ -39,7 +40,7 @@
     &__title{
         font-size: 1.6em;
         margin-top: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 7px;
         text-align: center;
         text-transform: uppercase;
     }
@@ -49,13 +50,13 @@
     }
     &__text{
         font-size: 1.1em;
-        margin-top: 10px;
+        margin-top: 7px;
         text-align: center;
     }
     &__pepsi{
         width: 40px;
         margin: 0 auto;
-        margin-top: 30px;
+        margin-top: 20px;
         img{
             max-width: 100%;
         }
