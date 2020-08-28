@@ -310,6 +310,7 @@ body {
   }
   .dishes__text {
     text-align: center;
+    line-height: 1em;
   }
 
   .plate {
@@ -341,7 +342,7 @@ body {
     grid-column-gap: 20px;
   }
   .menu__item {
-    width: 145px;
-    font-size: 1.1em;
+    width: 120px;
+    font-size: 1em;
   }
 }
