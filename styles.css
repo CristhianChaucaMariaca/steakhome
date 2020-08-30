@@ -332,6 +332,10 @@ body {
   }
 }
 @media screen and (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+
   .container {
     width: 90%;
   }
@@ -353,6 +357,7 @@ body {
   .plate {
     margin-top: 20px;
     margin-bottom: 20px;
+    font-size: 16px;
   }
   .plate__img {
     width: 100%;
