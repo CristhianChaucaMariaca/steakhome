@@ -1,0 +1,11 @@
+extends ../../templates/template.pug
+include ../../mixins/plate
+block append config
+    //- cambiar la varialbe | PAGE | para modificar el titulo de la pagina
+    - page = "Saté"
+    - descripcion = "Brochetta de pollo marinada cubierto con salsa de mani."
+block content
+    .content__plate
+        //- ingresar los datos para que se vea en la pagina en el siguiente orden
+        //- imgajen | titulo | precio | ingredientes
+        +plate('media/plato_principal/SATE.jpg',page,'(350gr) Bs 82','',descripcion)

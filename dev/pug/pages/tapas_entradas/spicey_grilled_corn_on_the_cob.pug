@@ -1,0 +1,11 @@
+extends ../../templates/template.pug
+include ../../mixins/plate
+block append config
+    //- cambiar la varialbe | PAGE | para modificar el titulo de la pagina
+    - page = "Spicey Grilled Corn on the Cob"
+    - descripcion = ""
+block content
+    .content__plate
+        //- ingresar los datos para que se vea en la pagina en el siguiente orden
+        //- imgajen | titulo | precio | ingredientes
+        +plate('media/tapas_entradas/CORN_ON_THE_COB.jpg',page,'Bs 26','',descripcion)

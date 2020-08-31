@@ -1,0 +1,11 @@
+extends ../../templates/template.pug
+include ../../mixins/plate
+block append config
+    //- cambiar la varialbe | PAGE | para modificar el titulo de la pagina
+    - page = "Tomahawk"
+    - descripcion = "Corte conocido con el hueso en forma de hacha, aportandole un excelente sabor."
+block content
+    .content__plate
+        //- ingresar los datos para que se vea en la pagina en el siguiente orden
+        //- imgajen | titulo | precio | ingredientes
+        +plate('media/plato_principal/TOMAHAWK.jpg',page,'(650gr) Bs 128','',descripcion)
