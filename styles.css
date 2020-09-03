@@ -204,8 +204,11 @@ body {
 }
 .dishes__name {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.3em;
   color: #472C0F;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .content__plate {
@@ -355,9 +358,8 @@ body {
   }
   .dishes__text {
     text-align: center;
-    line-height: 1em;
+    line-height: 0.92em;
   }
-
   .plate {
     margin-top: 20px;
     margin-bottom: 20px;
