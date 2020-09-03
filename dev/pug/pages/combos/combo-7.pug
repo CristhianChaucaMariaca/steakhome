@@ -1,0 +1,11 @@
+extends ../../templates/template.pug
+include ../../mixins/plate
+block append config
+    //- cambiar la varialbe | PAGE | para modificar el titulo de la pagina
+    - page = "Combo 7 - The Steakhouse"
+    - descripcion = "Mushroom burger 160 g + Coca-Cola 500 ml"
+block content
+    .content__plate
+        //- ingresar los datos para que se vea en la pagina en el siguiente orden
+        //- imgajen | titulo | precio | ingredientes
+        +plate('media/combos/COMBO_7.jpg',page,'Bs 66','',descripcion)

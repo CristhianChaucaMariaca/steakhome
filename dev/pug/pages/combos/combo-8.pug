@@ -1,0 +1,11 @@
+extends ../../templates/template.pug
+include ../../mixins/plate
+block append config
+    //- cambiar la varialbe | PAGE | para modificar el titulo de la pagina
+    - page = "Combo 8 - The Steakhouse"
+    - descripcion = "Pique macho The Steakhouse + Coca-Cola 1.5 L"
+block content
+    .content__plate
+        //- ingresar los datos para que se vea en la pagina en el siguiente orden
+        //- imgajen | titulo | precio | ingredientes
+        +plate('media/combos/COMBO_8.jpg',page,'Bs 99','',descripcion)

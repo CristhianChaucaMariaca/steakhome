@@ -1,0 +1,11 @@
+extends ../../templates/template.pug
+include ../../mixins/plate
+block append config
+    //- cambiar la varialbe | PAGE | para modificar el titulo de la pagina
+    - page = "Combo 3 - The Steakhouse"
+    - descripcion = "T-bone 600 g + Coca-Cola 1.5 L"
+block content
+    .content__plate
+        //- ingresar los datos para que se vea en la pagina en el siguiente orden
+        //- imgajen | titulo | precio | ingredientes
+        +plate('media/combos/COMBO_3.jpg',page,'Bs 119','',descripcion)
