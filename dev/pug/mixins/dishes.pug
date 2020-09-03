@@ -3,4 +3,6 @@ mixin dishes(link,img,text,price)
         a(href=link).dishes__link
             picture.dishes__picture
                 img.dishes__img(alt="", srcset=img)
-        p.dishes__text #{text} #{price}
+        .dishes__name
+            span.dishes__text #{text}&nbsp;
+            span.dishes__price #{price}

@@ -36,7 +36,10 @@
     }
     &__text{
         text-align: center;
-        font-size: 1.4em;
+    }
+    &__name{
+        text-align: center;
+        font-size: 1.5em;
         color:$colorprimario;
     }
 }

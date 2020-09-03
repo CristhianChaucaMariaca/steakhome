@@ -201,7 +201,10 @@ body {
 }
 .dishes__text {
   text-align: center;
-  font-size: 1.4em;
+}
+.dishes__name {
+  text-align: center;
+  font-size: 1.5em;
   color: #472C0F;
 }
 
@@ -348,6 +351,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 15px;
     grid-row-gap: 12px;
+    font-size: 14px;
   }
   .dishes__text {
     text-align: center;
