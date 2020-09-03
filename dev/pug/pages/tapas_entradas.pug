@@ -10,4 +10,4 @@ block content
             include ../config/tapas_entradas
             each plate in tapas
                 if(plate.status === true)
-                    +dishes(plate.link,plate.img,plate.text)
+                    +dishes(plate.link,plate.img,plate.text,plate.price)

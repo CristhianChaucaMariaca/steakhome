@@ -10,4 +10,4 @@ block content
             include ../config/tablas
             each plate in tablas
                 if(plate.status === true)
-                    +dishes(plate.link,plate.img,plate.text)
+                    +dishes(plate.link,plate.img,plate.text,plate.price)

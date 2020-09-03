@@ -1,6 +1,6 @@
-mixin dishes(link,img,text)
+mixin dishes(link,img,text,price)
     .dishes__plate
         a(href=link).dishes__link
             picture.dishes__picture
                 img.dishes__img(alt="", srcset=img)
-        p.dishes__text #{text}
+        p.dishes__text #{text} #{price}
