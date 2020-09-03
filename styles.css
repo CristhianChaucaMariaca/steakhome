@@ -198,6 +198,7 @@ body {
 }
 .dishes__img {
   width: 100%;
+  min-height: 100px;
 }
 .dishes__text {
   text-align: center;
@@ -406,8 +407,12 @@ body {
     font-size: 1em;
   }
 }
-@media screen and (max-width: 310px) {
+@media screen and (max-width: 320px) {
   .dishes__text {
     font-size: 1.2em;
+  }
+
+  .menu {
+    grid-column-gap: 10px;
   }
 }

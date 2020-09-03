@@ -2,7 +2,7 @@ mixin dishes(link,img,text,price)
     .dishes__plate
         a(href=link).dishes__link
             picture.dishes__picture
-                img.dishes__img(alt="", srcset=img)
+                img.dishes__img(alt=text,srcset=img,loading="lazy")
         .dishes__name
             span.dishes__text #{text}&nbsp;
             span.dishes__price #{price}
