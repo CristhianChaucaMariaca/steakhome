@@ -37,13 +37,13 @@
     }
     &__text{
         text-align: center;
+        width: 100%;
+        display: block;
     }
     &__name{
         text-align: center;
         font-size: 1.3em;
         color:$colorprimario;
-        display:flex;
-        flex-wrap: wrap;
         justify-content: center;
     }
 }

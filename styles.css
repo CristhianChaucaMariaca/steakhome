@@ -202,13 +202,13 @@ body {
 }
 .dishes__text {
   text-align: center;
+  width: 100%;
+  display: block;
 }
 .dishes__name {
   text-align: center;
   font-size: 1.3em;
   color: #472C0F;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
