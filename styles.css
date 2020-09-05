@@ -315,6 +315,16 @@ body {
   border-bottom-style: dotted;
 }
 
+.btn {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  max-width: 100px;
+}
+.btn__img {
+  width: 100%;
+}
+
 @media screen and (max-width: 1366px) {
   body {
     font-size: 16px;
@@ -382,6 +392,12 @@ body {
   .lists {
     font-size: 1.2rem;
     max-width: 550px;
+  }
+
+  .btn {
+    bottom: 30px;
+    right: 30px;
+    width: 90px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -455,6 +471,10 @@ body {
 
   .lists {
     font-size: 1em;
+  }
+
+  .btn {
+    width: 80px;
   }
 }
 @media screen and (max-width: 320px) {
