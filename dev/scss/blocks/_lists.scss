@@ -1,0 +1,43 @@
+.lists{
+    max-width: 700px;
+    margin:0 auto;
+    font-size: 1rem;
+    margin-bottom: 50px;
+    &__content{
+    }
+    &__header{
+        text-align: center;
+        width: 14em;
+        position: relative;
+        margin: 0 auto;
+    }
+    &__title{
+        position: absolute;
+        left: 50%;
+        bottom: 50%;
+        width: 90%;
+        transform:translateY(42%) translateX(-50%);
+        color:$colorsecundario;
+        font-size: 1.35em;
+        text-transform: uppercase;
+    }
+    &__marco{
+    }
+    &__body{
+
+    }
+    &__item{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    &__name{
+        font-size: 1.3em;
+    }
+    &__line{
+        flex-grow: 1;
+        border-bottom: 2px $colorprimario;
+        border-bottom-style: dotted;
+    }
+}

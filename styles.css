@@ -278,6 +278,43 @@ body {
   max-width: 100%;
 }
 
+.lists {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
+.lists__header {
+  text-align: center;
+  width: 14em;
+  position: relative;
+  margin: 0 auto;
+}
+.lists__title {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  width: 90%;
+  transform: translateY(42%) translateX(-50%);
+  color: #ffe9d3;
+  font-size: 1.35em;
+  text-transform: uppercase;
+}
+.lists__item {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.lists__name {
+  font-size: 1.3em;
+}
+.lists__line {
+  flex-grow: 1;
+  border-bottom: 2px #472C0F;
+  border-bottom-style: dotted;
+}
+
 @media screen and (max-width: 1366px) {
   body {
     font-size: 16px;
@@ -293,6 +330,10 @@ body {
   }
   .plate__logo {
     width: 10.625rem;
+  }
+  .lists {
+    font-size: 1.5rem;
+    max-width: 100%;
   }
 }
 @media screen and (max-device-width: 768px) {
@@ -336,6 +377,11 @@ body {
   }
   .plate__pepsi {
     width: 50px;
+  }
+
+  .lists {
+    font-size: 1.2rem;
+    max-width: 550px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -406,6 +452,10 @@ body {
     width: 140px;
     font-size: 1em;
   }
+
+  .lists {
+    font-size: 1em;
+  }
 }
 @media screen and (max-width: 320px) {
   .dishes__text {
@@ -414,5 +464,8 @@ body {
 
   .menu {
     grid-column-gap: 10px;
+  }
+  .lists {
+    font-size: 1.1rem;
   }
 }

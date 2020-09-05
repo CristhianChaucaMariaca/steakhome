@@ -1,0 +1,13 @@
+//- Titulo de Lista
+mixin header(title)
+    .lists__header
+        img.lists__marco(src="media/marco_title.svg", alt="Marco")
+        h3.lists__title #{title}
+
+mixin body(items)
+    .lists__body
+        each item in items
+            .lists__item
+                p.lists__name #{item.name}
+                p.lists__line
+                p.lists__price #{item.price}
