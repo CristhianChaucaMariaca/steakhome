@@ -7,9 +7,9 @@ mixin plate(img,title,price,pricetwo,ingredients)
                 img.plate__picture(srcset=img, alt=title)
         .container
             .plate__body
-                h2.plate__title #{title}
+                h2.plate__title!= title
                 p.plate__price #{price}
                 p.plate__price #{pricetwo}
                 p.plate__text #{ingredients}
-        .plate__pepsi
-            img(alt="logo pepsi", srcset="media/pepsi_logo.png")
+        .plate__sponsor
+            img(alt="Sponsor", srcset="media/"+sponsors[Math.floor(Math.random()*(5-0))+0].img+".svg")

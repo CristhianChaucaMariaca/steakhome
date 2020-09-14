@@ -114,7 +114,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(71, 44, 15, 0.7);
+  background-color: rgba(71, 44, 15, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -196,6 +196,9 @@ body {
 .dishes__picture {
   display: block;
 }
+.dishes__price {
+  font-size: 0.95em;
+}
 .dishes__img {
   width: 100%;
   min-height: 100px;
@@ -268,13 +271,13 @@ body {
   margin-top: 7px;
   text-align: center;
 }
-.plate__pepsi {
-  width: 40px;
+.plate__sponsor {
+  width: 60px;
   margin: 0 auto;
   margin-top: 40px;
   text-align: center;
 }
-.plate__pepsi img {
+.plate__sponsor img {
   max-width: 100%;
 }
 
@@ -305,6 +308,7 @@ body {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: baseline;
+  margin-bottom: 7px;
 }
 .lists__name {
   font-size: 1.3em;
@@ -323,6 +327,29 @@ body {
 }
 .btn__img {
   width: 100%;
+}
+
+.title {
+  max-width: 100%;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.title__content {
+  text-align: center;
+  width: 14em;
+  position: relative;
+  margin: 0 auto;
+}
+.title__text {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  width: 90%;
+  transform: translateY(42%) translateX(-50%);
+  color: #ffe9d3;
+  font-size: 1.35em;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 1366px) {
@@ -445,7 +472,7 @@ body {
     margin-bottom: 14px;
   }
   .plate__price {
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
   .plate__text {
     font-size: 1.3em;

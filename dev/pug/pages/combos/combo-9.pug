@@ -2,12 +2,12 @@ extends ../../templates/template.pug
 include ../../mixins/plate
 block append config
     //- cambiar la varialbe | PAGE | para modificar el titulo de la pagina
-    - page = "Combo 9 - The Steakhouse"
-    - descripcion = "2 x Jack Daniel's Steak de 300 gr + 2 cervezas Huari"
+    - page = "Combo 9 - 2 x Jack Daniel´s Steak 300g + Huari<br>Bs 199"
+    - descripcion = ""
 block content
     .content__plate
         //- ingresar los datos para que se vea en la pagina en el siguiente orden
         //- imgajen | titulo | precio | ingredientes
-        +plate('media/combos/COMBO_9.jpg',page,'Bs 199','',descripcion)
+        +plate('media/combos/COMBO_9.jpg',page,'','',descripcion)
     include ../../blocks/btn_atras
     +btn("combos")
