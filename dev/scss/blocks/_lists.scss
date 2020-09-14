@@ -3,8 +3,7 @@
     margin:0 auto;
     font-size: 1rem;
     margin-bottom: 50px;
-    &__content{
-    }
+
     &__header{
         text-align: center;
         width: 14em;
@@ -31,6 +30,7 @@
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: baseline;
+        margin-bottom: 7px;
     }
     &__name{
         font-size: 1.3em;

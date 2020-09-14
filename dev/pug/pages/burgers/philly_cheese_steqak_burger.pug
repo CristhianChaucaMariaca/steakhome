@@ -3,10 +3,11 @@ include ../../mixins/plate
 block append config
     //- cambiar la varialbe | PAGE | para modificar el titulo de la pagina
     - page = "Philly Cheese Steqak Burger"
+    - descripcion = "Servida con lechuga, tomate, aros de cebolla apanados cubierta de carne finamente picada en salsa de morrón, cebolla morada y salsa Philadelfia."
 block content
     .content__plate
         //- ingresar los datos para que se vea en la pagina en el siguiente orden
         //- imgajen | titulo | precio | ingredientes
-        +plate('media/hamburguesas/PHILLY_CHEESE_STEQAK_BURGER.jpg',page,'(160gr) Bs 78','(250gr) Bs 98','Servida con lechuga, tomate, aros de cebolla apanados, cubierta de carne finamente picada en salsa de morrón, cebolla morada y salsa Philadelfia.')
+        +plate('media/hamburguesas/PHILLY_CHESSE_STEAK_BURGER.jpg',page,'(160gr) Bs 78','(250gr) Bs 98',descripcion)
     include ../../blocks/btn_atras
     +btn("hamburguesas")
