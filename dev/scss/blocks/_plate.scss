@@ -54,12 +54,27 @@
         text-align: center;
     }
     &__sponsor{
-        width: 60px;
         margin: 0 auto;
         margin-top: 40px;
         text-align: center;
         img{
             max-width: 100%;
+            width: 60px;
         }
+    }
+}
+#Pacenia{
+    img{
+        width: 90px;
+    }
+}
+#huari{
+    img{
+        width: 90px;
+    }
+}
+#Guarana{
+    img{
+        width: 70px;
     }
 }
