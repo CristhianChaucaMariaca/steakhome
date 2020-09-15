@@ -40,4 +40,25 @@
         border-bottom: 2px $colorprimario;
         border-bottom-style: dotted;
     }
+    &--uno{
+        flex-grow: 1;
+    }
+    &--prices{
+        width: 70px;
+        text-align: center;
+    }
+    &__names{
+        width: 100%;
+        display: flex;
+        margin-top: 15px;
+    }
+    &__drinkname{
+        height: 1px;
+        flex-grow: 1;
+    }
+    &__name-price{
+        width: 70px;
+        text-align: center;
+    }
+    
 }

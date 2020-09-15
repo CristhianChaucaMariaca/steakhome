@@ -216,8 +216,8 @@ body {
 }
 
 .content__plate {
-  width: 100vw;
-  height: 100vh;
+  max-width: 100vw;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -225,6 +225,8 @@ body {
 
 .plate {
   width: 420px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .plate__logo {
   position: absolute;
@@ -278,19 +280,6 @@ body {
 }
 .plate__sponsor img {
   max-width: 100%;
-  width: 60px;
-}
-
-#Pacenia img {
-  width: 90px;
-}
-
-#huari img {
-  width: 90px;
-}
-
-#Guarana img {
-  width: 70px;
 }
 
 .lists {
@@ -330,6 +319,26 @@ body {
   border-bottom: 2px #472C0F;
   border-bottom-style: dotted;
 }
+.lists--uno {
+  flex-grow: 1;
+}
+.lists--prices {
+  width: 70px;
+  text-align: center;
+}
+.lists__names {
+  width: 100%;
+  display: flex;
+  margin-top: 15px;
+}
+.lists__drinkname {
+  height: 1px;
+  flex-grow: 1;
+}
+.lists__name-price {
+  width: 70px;
+  text-align: center;
+}
 
 .btn {
   position: fixed;
@@ -362,6 +371,40 @@ body {
   color: #ffe9d3;
   font-size: 1.35em;
   text-transform: uppercase;
+}
+
+.sponsors {
+  width: 100%;
+  max-width: 100%;
+}
+.sponsors__content {
+  width: 60px;
+  align-self: start;
+  margin-top: 40px;
+  align-self: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.sponsors__body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.sponsors__img {
+  max-width: 100%;
+}
+
+#Pacenia {
+  width: 100px;
+}
+
+#huari {
+  width: 100px;
+}
+
+#Guarana {
+  width: 70px;
 }
 
 @media screen and (max-width: 1366px) {
@@ -463,8 +506,8 @@ body {
     line-height: 0.92em;
   }
   .plate {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     font-size: 16px;
   }
   .plate__img {
@@ -511,9 +554,25 @@ body {
   .lists {
     font-size: 1em;
   }
+  .lists--prices {
+    width: 45px;
+  }
+  .lists__name-price {
+    min-width: 30;
+    width: 45px;
+  }
 
   .btn {
     width: 80px;
+  }
+
+  .sponsors__body {
+    flex-direction: column;
+  }
+  .sponsors__content {
+    width: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 @media screen and (max-width: 320px) {

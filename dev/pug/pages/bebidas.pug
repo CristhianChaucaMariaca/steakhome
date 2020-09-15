@@ -8,9 +8,21 @@ block content
         .lists
             include ../config/bebidas
             include ../mixins/list
-            each drink in drinks
-                .lists__content
-                    +header(drink.name)
-                    +body(drink.items)
+            +header(sinalcohol.name)
+            .lists__content
+                +body(sinalcohol.items)
+            +header(chops.name)
+            .lists__content
+                +chops(chops.items)
+            +header(cervezas.name)
+            .lists__content
+                +body(cervezas.items)
+            +header(vino.name)
+            .lists__content
+                +body(vino.items)
+            include ../mixins/sponsor
+            +sponsors(sponsors)
+            
+    
                     
                 

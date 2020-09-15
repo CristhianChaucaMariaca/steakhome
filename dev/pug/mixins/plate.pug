@@ -11,7 +11,8 @@ mixin plate(img,title,price,pricetwo,ingredients,sponsor)
                 p.plate__price #{price}
                 p.plate__price #{pricetwo}
                 p.plate__text #{ingredients}
-            .plate__sponsor
-                include sponsor
-                +sponsor(sponsor)
+            .sponsors
+                .sponsors__body
+                    include sponsor
+                    +sponsor(sponsor)
             

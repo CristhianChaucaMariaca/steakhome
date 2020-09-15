@@ -21,8 +21,8 @@
         }
     }
     .plate{
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 40px;
+        margin-bottom: 40px;
         font-size: 16px;
         &__img{
             width: 100%;
@@ -67,8 +67,27 @@
     }
     .lists{
         font-size: 1em;
+        &__names{
+        }
+        &--prices{
+            width: 45px;
+        }
+        &__name-price{
+            min-width: 30;
+            width: 45px;
+        }
     }
     .btn{
         width: 80px;
+    }
+    .sponsors{
+        &__body{
+            flex-direction: column;
+        }
+        &__content{
+            width: 50px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
     }
 }
