@@ -4,5 +4,5 @@ mixin dishes(link,img,text,price)
             picture.dishes__picture
                 img.dishes__img(alt=text,srcset=img,loading="lazy")
         .dishes__name
-            span.dishes__text #{text}
+            span.dishes__text !{text}
             span.dishes__price #{price}
