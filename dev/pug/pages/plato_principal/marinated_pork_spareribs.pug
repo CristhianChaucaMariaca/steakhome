@@ -3,11 +3,11 @@ include ../../mixins/plate
 block append config
     //- cambiar la varialbe | PAGE | para modificar el titulo de la pagina
     - page = "Marinated Pork- Spareribs"
-    - descripcion = "Disfruta hasta el cansancio nuestras deliciosas costillas de cerdo, y si logras comerte más de un kilo, ¡te ganarás una de nuestras poleras!"
+    - descripcion = "Disfruta de nuestras famosas y deliciosas costillas de cerdo marinadas y asadas a la parrilla a la perfección, bañadas en salsa BBQ. Si logras comer mas de 1 kilo. ¡te ganas una de nuestras poleras!"
 block content
     .content__plate
         //- ingresar los datos para que se vea en la pagina en el siguiente orden
         //- imgajen | titulo | precio | ingredientes
-        +plate('media/plato_principal/MARINATED_PORK_SPARERIBS.jpg',page,'(600 gr) Bs 132','(Ilimitado Bs 244)',descripcion,sponsors[2])
+        +plate('media/plato_principal/MARINATED_PORK_SPARERIBS.jpg',page,'(600 g) Bs 132','(Ilimitado Bs 244)',descripcion,sponsors[2])
     include ../../blocks/btn_atras
     +btn("plato_principal")

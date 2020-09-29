@@ -3,11 +3,11 @@ include ../../mixins/plate
 block append config
     //- cambiar la varialbe | PAGE | para modificar el titulo de la pagina
     - page = "Tenderloin Steak"
-    - descripcion = "Filete (lomito) hecho en nuestra parrilla, servido con una salsa a elección."
+    - descripcion = "Filete (lomito) a la parrilla, servido con una salsa a elección."
 block content
     .content__plate
         //- ingresar los datos para que se vea en la pagina en el siguiente orden
         //- imgajen | titulo | precio | ingredientes
-        +plate('media/plato_principal/TENDERLOIN_STEAK.jpg',page,'(300 gr) Bs 108','(600 gr) Bs 178',descripcion,sponsors[0])
+        +plate('media/plato_principal/TENDERLOIN_STEAK.jpg',page,'(300 g) Bs 108','(600 g) Bs 178',descripcion,sponsors[0])
     include ../../blocks/btn_atras
     +btn("plato_principal")

@@ -3,11 +3,11 @@ include ../../mixins/plate
 block append config
     //- cambiar la varialbe | PAGE | para modificar el titulo de la pagina
     - page = "Beef Ribs"
-    - descripcion = "Costillas de res asadas a la parrilla, deliciosas y jugosas, servidas con salsa a elección."
+    - descripcion = "Costillas de res, asadas a la parrilla deliciosas y jugosas, servidas con salsa a elección."
 block content
     .content__plate
         //- ingresar los datos para que se vea en la pagina en el siguiente orden
         //- imgajen | titulo | precio | ingredientes
-        +plate('media/plato_principal/BEEF_RIBS.jpg',page,'(600gr) Bs 112','',descripcion,sponsors[0])
+        +plate('media/plato_principal/BEEF_RIBS.jpg',page,'(600 g) Bs 112','',descripcion,sponsors[0])
     include ../../blocks/btn_atras
     +btn("plato_principal")

@@ -3,11 +3,11 @@ include ../../mixins/plate
 block append config
     //- cambiar la varialbe | PAGE | para modificar el titulo de la pagina
     - page = "Salchipapas"
-    - descripcion = "Salchipapas servido con postre y un jugo."
+    - descripcion = "Salchipapas servidas con helado."
 block content
     .content__plate
         //- ingresar los datos para que se vea en la pagina en el siguiente orden
         //- imgajen | titulo | precio | ingredientes
-        +plate('media/menu_infantil/SALCHIPAPA.jpg',page,'Bs 32','',descripcion,,sponsors[3])
+        +plate('media/menu_infantil/SALCHIPAPA.jpg',page,'Bs 32','',descripcion,sponsors[3])
     include ../../blocks/btn_atras
     +btn("menu_infantil")

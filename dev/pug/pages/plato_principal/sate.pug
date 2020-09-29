@@ -3,11 +3,11 @@ include ../../mixins/plate
 block append config
     //- cambiar la varialbe | PAGE | para modificar el titulo de la pagina
     - page = "Saté"
-    - descripcion = "Brochetta de pollo marinada y cubierta con salsa de maní."
+    - descripcion = "Brocheta de pollo marinada y cubierta con salsa de maní."
 block content
     .content__plate
         //- ingresar los datos para que se vea en la pagina en el siguiente orden
         //- imgajen | titulo | precio | ingredientes
-        +plate('media/plato_principal/SATE.jpg',page,'(350gr) Bs 82','',descripcion,sponsors[1])
+        +plate('media/plato_principal/SATE.jpg',page,'(350 g) Bs 82','',descripcion,sponsors[1])
     include ../../blocks/btn_atras
     +btn("plato_principal")

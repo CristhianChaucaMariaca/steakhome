@@ -3,11 +3,11 @@ include ../../mixins/plate
 block append config
     //- cambiar la varialbe | PAGE | para modificar el titulo de la pagina
     - page = "Skewered Chicken"
-    - descripcion = "Brocheta de pollo con tocino, cebolla, pimiento morron y piña, servida con una salsa a elección."
+    - descripcion = "Brocheta de pollo con tocino, cebolla, pimiento morrón y piña, servido con una salsa a elección."
 block content
     .content__plate
         //- ingresar los datos para que se vea en la pagina en el siguiente orden
         //- imgajen | titulo | precio | ingredientes
-        +plate('media/plato_principal/SKEWERED_CHICKEN.jpg',page,'(300gr) Bs 92','',descripcion,sponsors[2])
+        +plate('media/plato_principal/SKEWERED_CHICKEN.jpg',page,'(300 g) Bs 92','',descripcion,sponsors[2])
     include ../../blocks/btn_atras
     +btn("plato_principal")

@@ -3,11 +3,11 @@ include ../../mixins/plate
 block append config
     //- cambiar la varialbe | PAGE | para modificar el titulo de la pagina
     - page = "T-Bone"
-    - descripcion = "El corte especial más famoso de los Estados Unidos."
+    - descripcion = "El corte especial más famoso de los Estados Unidos. ¡Deliciosamente jugoso!"
 block content
     .content__plate
         //- ingresar los datos para que se vea en la pagina en el siguiente orden
         //- imgajen | titulo | precio | ingredientes
-        +plate('media/plato_principal/T_BONE.jpg',page,'(600gr) Bs 124','',descripcion,sponsors[5])
+        +plate('media/plato_principal/T_BONE.jpg',page,'(600 g) Bs 124','',descripcion,sponsors[5])
     include ../../blocks/btn_atras
     +btn("plato_principal")

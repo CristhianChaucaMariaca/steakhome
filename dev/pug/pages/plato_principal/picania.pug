@@ -3,11 +3,11 @@ include ../../mixins/plate
 block append config
     //- cambiar la varialbe | PAGE | para modificar el titulo de la pagina
     - page = "Picaña"
-    - descripcion = "Picaña corte conocido de Brasil. envueltos en su propia capa de grasa, jugosamente preparados."
+    - descripcion = "Picaña corte conocido de Brasil, envuelto en su capa de grasa, preparada en su propio jugo. ¡Muy jugosa!"
 block content
     .content__plate
         //- ingresar los datos para que se vea en la pagina en el siguiente orden
         //- imgajen | titulo | precio | ingredientes
-        +plate('media/plato_principal/PICANIA.jpg',page,'(300 gr) Bs 108','(600 gr) Bs 178',descripcion,sponsors[4])
+        +plate('media/plato_principal/PICANIA.jpg',page,'(300 g) Bs 108','(600 g) Bs 178',descripcion,sponsors[4])
     include ../../blocks/btn_atras
     +btn("plato_principal")

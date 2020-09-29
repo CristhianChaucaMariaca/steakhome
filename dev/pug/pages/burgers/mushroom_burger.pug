@@ -3,11 +3,11 @@ include ../../mixins/plate
 block append config
     //- cambiar la varialbe | PAGE | para modificar el titulo de la pagina
     - page = "Mushroom Burger"
-    - descripcion = "Hamburguesa hecha con nuestra receta secreta, servido con queso, tocino y salsa de champiñones, ¡que no vas a olvidar!"
+    - descripcion = "Hamburguesa hecha con nuestra receta secreta, servida con queso, tocino y salsa de champiñones, ¡que no vas a olvidar!"
 block content
     .content__plate
         //- ingresar los datos para que se vea en la pagina en el siguiente orden
         //- imgajen | titulo | precio | ingredientes
-        +plate('media/hamburguesas/MUSHROOM_BURGER.jpg',page,'(160gr) Bs 66','(250gr) Bs 82',descripcion,sponsors[2])
+        +plate('media/hamburguesas/MUSHROOM_BURGER.jpg',page,'(160 g) Bs 66','(250 g) Bs 82',descripcion,sponsors[2])
     include ../../blocks/btn_atras
     +btn("hamburguesas")
