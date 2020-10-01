@@ -10,7 +10,7 @@ mixin plate(img,title,price,pricetwo,ingredients,sponsor)
                 h2.plate__title!= title
                 p.plate__price #{price}
                 p.plate__price #{pricetwo}
-                p.plate__text #{ingredients}
+                p.plate__text !{ingredients}
             .sponsors
                 .sponsors__body
                     include sponsor
