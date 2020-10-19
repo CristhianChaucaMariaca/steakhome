@@ -282,6 +282,10 @@ body {
 .plate__sponsor img {
   max-width: 100%;
 }
+.plate__legend {
+  text-align: center;
+  margin-top: 15px;
+}
 
 .lists {
   font-size: 1.2rem;
